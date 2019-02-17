@@ -1,0 +1,174 @@
+@import colors
+@import projectCard
+  
+*
+
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+body
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  
+main, header
+  width: 100%
+  margin: 0 auto
+  max-width: 1000px 
+  padding: 2.5rem 2.5rem 1.5rem 2.5rem
+
+h1
+  font-family: 'Playfair Display', serif
+  font-size: 1.875rem
+  font-weight: 400
+  margin-bottom: 2rem
+  @media only screen and (min-width: 601px)
+      font-size: 2.375rem
+    
+h2
+  font-family: 'Roboto', sans-serif
+  font-size: 1rem
+  font-weight: 400
+  color: $grey
+  margin-bottom: 3rem
+  @media only screen and (min-width: 601px)
+    margin-bottom: 6rem
+  
+
+.logo
+  height: 2.5rem  
+
+footer
+  margin: auto 0 0 0
+  background-color: $black
+  padding: 6rem 0
+  text-align: center
+  .email
+    color: $white
+    font-size: 1.875rem
+    text-decoration: none
+    @media all and (min-width: 601px)
+      font-size: 2.375rem
+      
+a.fa:link,
+a.fa:visited
+  color: $white
+  text-decoration: none
+  margin: 4rem 0.625rem 0
+  display: inline-block
+  transition: all 1s ease
+  &:hover, &:active, &:focus
+    transform: scale(1.2)
+
+a.fa.fa-twitter, a.fa.fa-dribbble, a.fa.fa-behance, a.fa.fa-linkedin, a.fa.fa-codepen, a.fa.fa-github
+  font-size: 1.25rem
+
+  
+//PROJECT STYLES
+
+section
+  margin-bottom: 3rem
+  @media all and (min-width: 601px)
+    margin-bottom: 5rem
+  
+figure
+  margin: 0 auto 3rem
+  @media all and (min-width: 601px)
+    margin: 0 auto 6rem
+figure > img
+  display: block
+  width: 100%
+  max-width: 1000px
+  text-align: center
+  margin-bottom: 1rem
+figcaption
+  font-family: 'Roboto', sans-serif
+  font-size: 0.75rem
+  font-weight: 400
+  text-align: center
+  color: $grey
+  padding-top: 0.5rem
+  @media all and (min-width: 601px)
+    padding-top: 1rem
+  
+h3
+  font-family: 'Roboto', sans-serif
+  font-weight: 700
+  font-size: 1rem
+  margin-bottom: 1rem
+  
+p
+  font-family: 'Roboto', sans-serif
+  font-size: 1rem
+  margin-bottom: 1.125rem
+  line-height: 1.5rem
+  color: $text
+
+.link
+  font-family: 'Roboto', sans-serif
+  font-size: 1rem
+  color: $text
+  display: inline
+  &:hover, &:active, &:focus
+    color: $black
+  
+.list-link
+  font-family: 'Roboto', sans-serif
+  font-size: 1rem
+  color: $text
+  margin: 0 auto
+  display: block
+  margin-top: 20px
+  transition: color 1s ease
+  &:hover, &:active, &:focus
+    color: $black
+  
+li
+  font-family: 'Roboto', sans-serif
+  margin-left: 1.125rem
+  line-height: 1.5
+  color: $text
+  
+blockquote
+  font-family: 'Playfair Display', serif
+  font-weight: 400
+  font-style: italic
+  color: $text
+  border-left: 2px solid $grey
+  padding-left: 1rem
+  line-height: 1.5
+  max-width: 700px
+  display: block
+  margin: 0 auto 3rem
+  @media all and (min-width: 601px)
+    margin: 0 auto 6rem
+    
+.project-nav
+  display: block
+  clear: both
+  float: none
+  padding: 1.5rem 0 50px
+  width: 100%
+  margin: 0 auto
+  max-width: 1000px
+  color: $text
+  
+a.project-prev
+  font-family: 'Roboto', sans-serif
+  font-size: 1rem
+  color: $text
+  float: left
+  transition: color 1s ease
+  &:hover, &:active, &:focus
+    color: $black
+a.project-next
+  font-family: 'Roboto', sans-serif
+  font-size: 1rem
+  color: $text
+  float: right
+  transition: color 1s ease
+  &:hover, &:active, &:focus
+    color: $black
