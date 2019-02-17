@@ -33,6 +33,25 @@
   font-family: sans-serif;
   color: #ccc; }
 
+/* Sass Document */
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in;
+  text-align: center;
+  color: #aaa;
+  z-index: 1; }
+
+@media(min-width: 27em) {
+  .back-to-top {
+    right: 40px;
+    bottom: 40px; } }
+.back-to-top:active {
+  transform: scale(0.97); }
+
 * {
   margin: 0;
   padding: 0;
