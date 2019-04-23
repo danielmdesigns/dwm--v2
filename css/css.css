@@ -10,17 +10,22 @@
   text-decoration: none;
   cursor: pointer; }
   .project-card:hover > img {
+    -webkit-box-shadow: 0 0.1875rem 1.5rem rgba(0, 0, 0, 0.3);
     box-shadow: 0 0.1875rem 1.5rem rgba(0, 0, 0, 0.3); }
   .project-card img {
     width: 100%;
     max-width: 1000px;
-    transition: box-shadow 1s ease; }
+    -webkit-transition: -webkit-box-shadow 1s ease;
+    transition: -webkit-box-shadow 1s ease;
+    -o-transition: box-shadow 1s ease;
+    transition: box-shadow 1s ease;
+    transition: box-shadow 1s ease, -webkit-box-shadow 1s ease; }
   @media all and (min-width: 601px) {
     .project-card {
       margin-bottom: 6rem; } }
 
 .card-title {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: #000000;
   font-weight: 100;
   font-size: 32px;
@@ -40,27 +45,38 @@
   bottom: 20px;
   width: 100px;
   cursor: pointer;
-  transition: background-color 0.5s ease-in;
+  -webkit-transition: background-color .5s ease-in;
+  -o-transition: background-color .5s ease-in;
+  transition: background-color .5s ease-in;
   text-align: center;
   color: #aaa;
   z-index: 1; }
 
-@media(min-width: 27em) {
+@media (min-width: 27em) {
   .back-to-top {
     right: 40px;
     bottom: 40px; } }
+
 .back-to-top:active {
+  -webkit-transform: scale(0.97);
+  -ms-transform: scale(0.97);
   transform: scale(0.97); }
 
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh; }
 
@@ -71,7 +87,7 @@ main, header {
   padding: 2.5rem 2.5rem 1.5rem 2.5rem; }
 
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1.875rem;
   font-weight: 400;
   margin-bottom: 2rem; }
@@ -80,7 +96,7 @@ h1 {
       font-size: 2.375rem; } }
 
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #aaa;
@@ -88,6 +104,9 @@ h2 {
   @media only screen and (min-width: 601px) {
     h2 {
       margin-bottom: 6rem; } }
+
+.text-bold {
+  font-weight: 700; }
 
 .text-center {
   text-align: center; }
@@ -117,11 +136,15 @@ a.fa:visited {
   text-decoration: none;
   margin: 4rem 0.625rem 0;
   display: inline-block;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
   transition: all 1s ease; }
   a.fa:link:hover, a.fa:link:active, a.fa:link:focus,
   a.fa:visited:hover,
   a.fa:visited:active,
   a.fa:visited:focus {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2); }
 
 a.fa.fa-twitter, a.fa.fa-dribbble, a.fa.fa-behance, a.fa.fa-linkedin, a.fa.fa-codepen, a.fa.fa-github {
@@ -146,8 +169,13 @@ figure > img {
   text-align: center;
   margin-bottom: 1rem; }
 
+.actual-size {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto; }
+
 figcaption {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
   text-align: center;
@@ -164,20 +192,20 @@ figcaption {
   max-width: 600px; }
 
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 1rem;
   margin-bottom: 1rem; }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   margin-bottom: 1.125rem;
   line-height: 1.5rem;
   color: #444; }
 
 .link {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #444;
   display: inline; }
@@ -185,24 +213,26 @@ p {
     color: #000000; }
 
 .list-link {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #444;
   margin: 0 auto;
   display: block;
   margin-top: 20px;
+  -webkit-transition: color 1s ease;
+  -o-transition: color 1s ease;
   transition: color 1s ease; }
   .list-link:hover, .list-link:active, .list-link:focus {
     color: #000000; }
 
 li {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-left: 1.125rem;
   line-height: 1.5;
   color: #444; }
 
 blockquote {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
   font-style: italic;
   color: #444;
@@ -227,19 +257,23 @@ blockquote {
   color: #444; }
 
 a.project-prev {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #444;
   float: left;
+  -webkit-transition: color 1s ease;
+  -o-transition: color 1s ease;
   transition: color 1s ease; }
   a.project-prev:hover, a.project-prev:active, a.project-prev:focus {
     color: #000000; }
 
 a.project-next {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #444;
   float: right;
+  -webkit-transition: color 1s ease;
+  -o-transition: color 1s ease;
   transition: color 1s ease; }
   a.project-next:hover, a.project-next:active, a.project-next:focus {
     color: #000000; }
