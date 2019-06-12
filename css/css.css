@@ -234,6 +234,10 @@ li {
   line-height: 1.5;
   color: #444; }
 
+ul.list {
+  list-style: none;
+  margin-left: -18px; }
+
 blockquote {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
@@ -280,3 +284,7 @@ a.project-next {
   transition: color 1s ease; }
   a.project-next:hover, a.project-next:active, a.project-next:focus {
     color: #000000; }
+
+.update {
+  padding: 1rem 1rem .125rem 1rem;
+  border: 2px solid #aaa; }
