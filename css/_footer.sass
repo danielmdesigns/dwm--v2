@@ -1,0 +1,31 @@
+footer
+  padding-top: 4rem
+  padding-bottom: 1rem
+  background-color: $black
+  .social
+    text-align: center
+    width: 100%
+    .social-email
+      font-size: 1.5rem
+      text-decoration: none
+      margin-bottom: 2rem
+      overflow-wrap: break-word
+      @media all and (min-width: 600px)
+        font-size: 2.260rem
+    li
+      list-style: none
+      display: inline
+      padding-right: 1rem
+      //margin-bottom: 1rem
+      @media only screen and (max-width: 600px)
+        //display: block
+
+li > a
+    font-size: 0.875rem
+        
+.social-email > a, li > a
+  color: $white
+  text-decoration: none
+  transition: none
+  &:hover
+    color: $white
