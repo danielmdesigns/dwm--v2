@@ -59,7 +59,7 @@ figure {
   figure img {
     width: 100%; }
 
-figcaption, .desc {
+figcaption, .desc, footer {
   color: #999999;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 0.75em;
@@ -80,36 +80,27 @@ ol, ul {
   color: #757575; }
 
 footer {
-  padding-top: 4rem;
-  padding-bottom: 1rem;
-  background-color: #333333; }
+  padding: 0 4rem 4rem 4rem; }
+  @media only screen and (max-width: 500px) {
+    footer {
+      padding: 0 4rem 2rem 4rem; } }
   footer .social {
+    margin: 0;
     text-align: center;
     width: 100%; }
-    footer .social .social-email {
-      font-size: 1.5rem;
-      text-decoration: none;
-      margin-bottom: 2rem;
-      overflow-wrap: break-word; }
-      @media all and (min-width: 600px) {
-        footer .social .social-email {
-          font-size: 2.260rem; } }
     footer .social li {
       list-style: none;
       display: inline;
       padding-right: 1rem; }
-
-li > a {
-  font-size: 0.875rem; }
-
-.social-email > a, li > a {
-  color: #FFFFFF;
-  text-decoration: none;
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none; }
-  .social-email > a:hover, li > a:hover {
-    color: #FFFFFF; }
+      footer .social li:last-of-type {
+        padding-right: 0; }
+      @media only screen and (max-width: 500px) {
+        footer .social li {
+          padding-right: 0;
+          padding-bottom: 1rem;
+          display: block; }
+          footer .social li:last-of-type {
+            padding-bottom: 0; } }
 
 .project-card {
   display: block;
@@ -196,6 +187,24 @@ li > a {
   -webkit-transform: scale(0.97);
   -ms-transform: scale(0.97);
   transform: scale(0.97); }
+
+.banner-switch-sm > img,
+.banner-switch-lg > img {
+  width: 100%; }
+
+.banner-switch-lg > img {
+  display: block; }
+  @media only screen and (max-width: 700px) {
+    .banner-switch-lg > img {
+      max-width: 1000px;
+      display: none; } }
+
+.banner-switch-sm > img {
+  display: block; }
+  @media only screen and (min-width: 701px) {
+    .banner-switch-sm > img {
+      max-width: 500px;
+      display: none; } }
 
 * {
   margin: 0;
