@@ -62,7 +62,7 @@ figure {
 figcaption {
   text-align: center; }
 
-figcaption, .desc, .test {
+figcaption, .desc, .copyright {
   color: #999999;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 0.75em;
@@ -99,7 +99,7 @@ footer {
       padding-right: 1rem; }
       footer .social li:last-of-type {
         padding-right: 0; }
-  footer .test {
+  footer .copyright {
     margin-top: 4rem; }
 
 .project-card {
