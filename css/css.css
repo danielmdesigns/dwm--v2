@@ -59,12 +59,14 @@ figure {
   figure img {
     width: 100%; }
 
-figcaption, .desc, footer {
+figcaption {
+  text-align: center; }
+
+figcaption, .desc, .test {
   color: #999999;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 0.75em;
-  line-height: 1.375rem;
-  text-align: center; }
+  line-height: 1.375rem; }
 
 ol, ul {
   margin-left: 20px; }
@@ -80,27 +82,25 @@ ol, ul {
   color: #757575; }
 
 footer {
-  padding: 0 4rem 4rem 4rem; }
+  padding: 0 4rem 4rem 4rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
   @media only screen and (max-width: 500px) {
     footer {
       padding: 0 4rem 2rem 4rem; } }
   footer .social {
-    margin: 0;
-    text-align: center;
-    width: 100%; }
+    margin: 0 auto;
+    width: 100%;
+    max-width: 870px; }
     footer .social li {
       list-style: none;
       display: inline;
       padding-right: 1rem; }
       footer .social li:last-of-type {
         padding-right: 0; }
-      @media only screen and (max-width: 500px) {
-        footer .social li {
-          padding-right: 0;
-          padding-bottom: 1rem;
-          display: block; }
-          footer .social li:last-of-type {
-            padding-bottom: 0; } }
+  footer .test {
+    margin-top: 4rem; }
 
 .project-card {
   display: block;
@@ -137,6 +137,7 @@ footer {
   clear: both;
   float: none;
   margin: 0 auto;
+  padding-bottom: 4rem;
   color: #757575;
   font-weight: 400;
   -webkit-transition: all 0.5s ease;
@@ -220,7 +221,7 @@ body {
 .wide {
   width: 100%;
   max-width: 1000px;
-  padding: 4rem;
+  padding: 4rem 4rem 0 4rem;
   margin: 0 auto; }
 
 .narrow {
