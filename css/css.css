@@ -100,7 +100,7 @@ footer {
       footer .social li:last-of-type {
         padding-right: 0; }
   footer .copyright {
-    margin-top: 4rem; }
+    margin-top: 2.5rem; }
 
 .project-card {
   display: block;
@@ -232,6 +232,12 @@ body {
 
 header {
   margin-bottom: 2rem; }
+
+.logo {
+  width: 45px; }
+  @media only screen and (max-width: 500px) {
+    .logo {
+      width: 40px; } }
 
 .img-sm {
   display: block;
