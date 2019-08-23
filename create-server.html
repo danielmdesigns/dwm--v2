@@ -18,13 +18,88 @@
                 <img class="logo" src="img/dwm.svg" alt="Daniel Maldonado">
             </a>
         </header>
-        <h1 class="text-center">Redesigning Rackspace Create Servers Flow</h1>
+        <h1 class="text-center">Refactored Server Flow</h1>
         <figure>
             <img src="img/cs-cover.jpg" alt="...">
             <figcaption>All new "Create Servers" Experience</figcaption>
         </figure>
 
-        <p>Project case study coming soon...</p>
+        <p>Originally tasked to refresh the <a class="link" href="rs-mobile.html">Rackspace Mobile App</a> UI to align more closely with our web portal(s) and design system. When working on the current “Create Servers” flow, though, I decided to overhaul the entire process for a more intuitive and enhanced user experience.</p>
+
+        <p>While not initially scoped as part of the refresh project, I wanted to challenge myself to improve the existing experience and share why this should be an important update to include in this refresh. Here is how I did that!</p>
+
+        <ul class="list">
+            <li><span class="text-bold">Role:</span> Lead Experience &amp; Interface Designer</li>
+            <li><span class="text-bold">Platforms:</span> Mobile Android &amp; iOS</li>
+            <li><span class="text-bold">Project Length:</span> September - December 2018 (3 Months)</li>
+        </ul>
+
+        <h1>Expected Outcome</h1>
+        <p>Increase productivity adding a new server while reducing uncertainty. Expand feature parity between both iOS and Android platforms.</p>
+
+        <figure>
+            <img src="img/cs-eval.jpg" alt="...">
+            <figcaption>Hueristic Evaluation of the current iOS and Android Interface Design.</figcaption>
+        </figure>
+
+        <h1>Critique</h1>
+        <p>I took screenshots of the current flow for both platforms and performed a basic heuristic evaluation on what I thought could be improved and issues that needed to be addressed. Here are some high-level problems I wanted to solve:</p>
+
+        <ul>
+            <li>Ambiguous User Flows</li>
+            <li>Uninviting User Interface</li>
+            <li>Obstacles in Finding Information</li>
+        </ul>
+
+        <h1>User Interviews</h1>
+        <p>With limited access to actual user interviews I revisited previous research readouts from other studies on servers. I highlighted things that I thought would be most helpful that could help guide my decisions.</p>
+        <figure>
+            <img src="img/cs-research.png" alt="...">
+            <figcaption>Usability Scale and Survey Results.</figcaption>
+        </figure>
+
+        <h1>Conceptualizing</h1>
+        <p>Now, parts of the design I thought made sense, yet others just felt "old" and quite honestly, out-of-date. Still, how could we make things more clear? I wanted to fix features like ‘Image Type’ that had usability issues while making others more discoverable.</p>
+
+        <h1>Create Flow</h1>
+        <p>My first idea was to improve the process of the native experience, using a UITableViewController. However, as I iterated over the ideas and native components, it was clear I still had more concerns than confidence.</p>
+
+        <h1>Challenges</h1>
+        <p>The native flow required too many taps and could get very deep, awfully fast. The hierarchy tree just seemed to get super complex in some areas and while most of the pieces fit, there always was one or two elements out of place.</p>
+        <p>A Table view gives the perception that selections can be made in any order when in fact, configuration works best in a more linear process.</p>
+        <p>The current flow of configuring an image is not bad. Out of date, visually? Totally! But it worked and with a few usability tweaks, could still potentially work today. So, that's why I adored the idea of using chips/tile/pills to select, customize and configure servers. However, getting the components to fit and play nicely together proved to be difficult.</p>
+
+        <h1>Stepper Flow</h1>
+        <p>Luckily, out of my brain dumping sessions, I did land on a stepper flow I wanted to explore in deeper detail. The idea here is, it would be more of a step-by-step process versus a customizable or table view model.</p>
+        <p>I shared this new direction internally and it was met with a lot of positive feedback. So, my next move was to prototype and test it. Some of the feedback I gathered was:</p>
+
+        <ul>
+            <li>A ‘Segmented Control’ would not scale well for flavor classes. What other elements or controls could we use?</li>
+            <li>Fix ‘Bootable Volumes’. It’s extremely buggy in the existing app, but the functionality should be there!</li>
+            <li>Password(s) are not provided at completion. Make it possible for the user to know what the password is.</li>
+        </ul>
+
+        <h1>Version Two</h1>
+        <p>Holes are poked into the updated prototype and it starts to take shape. I also introduced the visual design along with shaping the interactions. Improvements made in this revision cycle included:</p>
+
+        <ul>
+            <li>‘Server Type’ is dependent on ‘Region’. Users should know that ahead of time in order to choose the correct ‘Region’</li>
+            <li>Including product & OS icons help facilitate recognition rather than recall</li>
+            <li>Navigate the user back to the summary view after a step is complete</li>
+            <li>Avoid frustrations by breaking up into smaller primary tasks</li>
+            <li>Selecting from a list of pre-config options do not work for our users, let them configure</li>
+            <li>Make "Additional Options" look more optional. Still appears that it's mandatory</li>
+        </ul>
+
+        <h1>Final Redesign Flow</h1>
+        <p>After several smaller rounds of in-house usability tests and making small adjustments to the mockups and prototypes we landed on a new refactored flow for spinning up servers on mobile devices.</p>
+
+        <p>While most of this project is shown for our iOS customers, I was designing for the Android team as well, in parallel. Strictly adhering to both the Human Interface and Material Design Guidelines.</p>
+
+        <p>View and try out the new experience available in the app stores for <a class="link" href="#">iOS</a> and <a class="link" href="#">Android</a>.</p>
+
+        <h1>Final Outcome</h1>
+        <p>Delivered a user-friendly interface, aligned with user needs. A quick and intuitive process flow that adheres to the iOS Human Interface & Android Material Design Guidelines. No feature loss, as well as, fixing Bootable Volumes issue and providing customers with passwords upon creation. Fully optimized to increase the productivity of creating server activities while on the go</p>
 
         <div class="project-nav">
             <a class="project-nav__prev" href="index.html">Home</a>
