@@ -88,7 +88,7 @@ footer {
   margin: 0 auto; }
   @media only screen and (max-width: 500px) {
     footer {
-      padding: 0 4rem 2rem 4rem; } }
+      padding: 0 2rem 2rem 2rem; } }
   footer .social {
     margin: 0 auto;
     width: 100%;
@@ -223,6 +223,9 @@ body {
   max-width: 1000px;
   padding: 4rem 4rem 0 4rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 500px) {
+    .wide {
+      padding: 2rem 2rem 0 2rem; } }
 
 .narrow {
   width: 100%;
