@@ -218,6 +218,72 @@ footer {
     .banner-sm > img {
       display: none; } }
 
+.hr {
+  height: 1px;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #999999;
+  display: block;
+  margin-bottom: 1rem; }
+
+.related-title {
+  color: #333333;
+  font-weight: 400;
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem; }
+  @media only screen and (max-width: 500px) {
+    .related-title {
+      font-size: 1.75rem;
+      line-height: 2.5rem;
+      margin-bottom: 0.125rem; } }
+
+.related-desc {
+  color: #999999;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin-bottom: 1rem; }
+
+.related {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto 2.25rem; }
+  @media (min-width: 767px) {
+    .related {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      max-width: 1000px; } }
+
+.related-card {
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+  color: #333333;
+  text-decoration: none; }
+  .related-card:hover > img {
+    -webkit-box-shadow: 0 0 50px -20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 50px -20px rgba(0, 0, 0, 0.3); }
+  .related-card img {
+    width: 100%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
+  .related-card:last-child {
+    margin-bottom: 0; }
+  @media (min-width: 767px) {
+    .related-card {
+      margin-bottom: 0;
+      margin-right: 24px; }
+      .related-card:last-child {
+        margin-right: 0; } }
+
 * {
   margin: 0;
   padding: 0;
