@@ -224,7 +224,7 @@ footer {
   max-width: 1000px;
   background-color: #999999;
   display: block;
-  margin-bottom: 1rem; }
+  margin: 4rem auto; }
 
 .related-title {
   color: #333333;
@@ -252,7 +252,7 @@ footer {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0 auto 2.25rem; }
+  margin: 0 auto 3.25rem; }
   @media (min-width: 767px) {
     .related {
       -webkit-box-orient: horizontal;
