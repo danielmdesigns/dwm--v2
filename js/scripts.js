@@ -1,5 +1,11 @@
 $(document).ready(function(){
 	"use strict";
+	
+//Date auto updater	
+//var now = new Date();
+//var year = now.getFullYear();
+//var text = "Website designed and built by me. Last updated on February 28th, "
+//$('.copyright').html('© '+text+year);
 
 //README
 $("#js-readme").on("click", function(e){
