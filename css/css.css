@@ -343,3 +343,105 @@ header {
   @media only screen and (max-width: 768px) {
     .hide {
       display: none; } }
+
+/* ----------------------------------------
+   Outcomes Block
+---------------------------------------- */
+
+.outcomes-block {
+  border: 1px solid #efefef;
+  margin: 2.5rem 0;
+  padding: 2rem; }
+
+.outcomes-headline {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #efefef; }
+  @media only screen and (max-width: 600px) {
+    .outcomes-headline {
+      flex-direction: column;
+      gap: 1rem; } }
+
+.outcomes-headline__number {
+  font-family: 'Lora', Georgia, Times, "Times New Roman", serif;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1;
+  flex-shrink: 0; }
+  @media only screen and (max-width: 500px) {
+    .outcomes-headline__number {
+      font-size: 3rem; } }
+
+.outcomes-headline__title {
+  font-family: 'Lora', Georgia, Times, "Times New Roman", serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 0.5rem; }
+
+.outcomes-headline__desc {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #757575;
+  margin-bottom: 0; }
+
+.outcomes-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem; }
+
+.outcomes-stat__label {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #999999;
+  margin-bottom: 0.375rem; }
+
+.outcomes-stat__value {
+  font-family: 'Lora', Georgia, Times, "Times New Roman", serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1.5; }
+
+/* Quotes */
+
+.outcomes-quotes {
+  margin: 0 0 2.25rem; }
+
+.outcomes-quotes__label {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #999999;
+  margin-bottom: 1rem; }
+
+.outcomes-quotes__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem; }
+
+.outcomes-quote {
+  border: 1px solid #efefef;
+  padding: 1.25rem 1.5rem; }
+
+.outcomes-quote__text {
+  font-family: 'Lora', Georgia, Times, "Times New Roman", serif;
+  font-size: 0.9375rem;
+  font-style: italic;
+  color: #333333;
+  line-height: 1.7;
+  margin-bottom: 0.75rem; }
+
+.outcomes-quote__attr {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 0.75rem;
+  color: #999999;
+  line-height: 1.4; }
